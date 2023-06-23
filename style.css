@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: #000;
+}
+
+
+
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(/img/wallpapersden.com_programming-coding-language_3840x2400.jpg); */
+}
+.hero img{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.hero .fire-1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 20px;
+    bottom: 350px;
+    object-fit: contain;
+    animation: uptodown 3s infinite;
+}
+.hero .fire-2{
+    position: absolute;
+    right: 230px;
+    bottom: 260px;
+    object-fit: contain;
+    animation: uptodown 3s infinite;
+}
+.hero .fire-3{
+    position: absolute;
+    right: 780px;
+    bottom: 510px;
+    object-fit: contain;
+    animation: uptodown 3s infinite;
+}
+.hero .description{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 3rem 0 0 0;
+}
+.hero .description .bio-country{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px 0 1.5rem 0;
+}
+.hero .paragraf{
+    color: #ffffffb2;
+    font-family: 'Open sans', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 10px;
+}
+.hero .description .name-red{
+    background-color: #D95E5E;
+    padding: 5px;
+}
+.social,
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 3rem;
+    margin: 1.5rem 0 0 0;
+    animation: warnawarni 3s infinite;
+}
+.social a:hover{
+    color: rgba(255, 255, 255, 0.267);
+}
+
+
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    ::-webkit-scrollbar{
+        scroll-behavior: smooth;
+       
+    }
+    /* navaside */
+    /* header {
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      
+      #toggleBtn {
+        font-size: 25px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #sidebar {
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        z-index: 9999999999;
+      }
+      
+      #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #sidebar li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      #sidebar li:hover{
+        border-radius: 10px;
+        background-color: #8A3FFC;
+        cursor: pointer;
+      }
+      
+      #sidebar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        color: #000;
+        text-decoration: none;
+      }
+      
+      section {
+        margin: 20px;
+      } */
+    
+
+/* hero */
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* background-image: url(/img/wallpapersden.com_programming-coding-language_3840x2400.jpg); */
+    }
+
+    .hero img{
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .hero .profile{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .hero .fire-1{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: -200px;
+        bottom: 450px;
+        object-fit: contain;
+        animation: uptodown 3s infinite;
+    }
+
+    .hero .fire-2{
+        position: absolute;
+        left: 245px;
+        bottom: 400px;
+        object-fit: contain;
+        animation: uptodown 3s infinite;
+    }
+    .hero .fire-3{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 250px;
+        bottom: 600px;
+        object-fit: contain;
+        animation: uptodown 3s infinite;
+    }
+
+    .hero .description{
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 3rem 0 0 0;
+    }
+    
+    .hero .description .bio-country{
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 5px 0 1.5rem 0;
+    }
+    
+    .hero .paragraf{
+        color: #ffffffb2;
+        font-family: 'Open sans', sans-serif;
+        font-size: 13px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .hero .description .name-red{
+        background-color: #D95E5E;
+        padding: 5px;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        animation: warnawarni 3s infinite;
+    }
+    .social svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .social a:hover{
+        color: rgba(255, 255, 255, 0.267);
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        height: 100vh;
+        background-color: #eee7e7;
+    }
+    .about .title-skills img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 230px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .about img{
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    .about h2{
+        color: #000;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .about p{
+        /* color: #ffffffd3 */
+        color: #000000e8;
+        font-weight: 600;
+        padding: 0 10px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .about button#donwload-cv{
+        width: 120px;
+        height: 50px;
+        font-weight: 500;
+        margin: 30px 0 0 10px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        /* box-shadow: 2px 1px 10px 1px #8b3ffc; */
+        background: #8A3FFC;
+        cursor: pointer;
+    }
+    .about button#donwload-cv:hover{
+        transition: all 0.2s ease-in-out;
+        box-shadow: 2px 1px 10px 1px #8b3ffc;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+    }
+    .services .title-skills img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 230px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .services .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 40px 0;
+        border-radius: 8px;
+        background-color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+    .services .card:hover{
+        background-color: #D95E5E;
+        cursor: pointer;
+    }
+    
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        background-color: #eee7e7;
+    }
+    .skills .title-skills img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 100px;
+    }
+    .skills .img-css{
+        width: 50px;
+    }
+    .skills img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100%;
+        object-fit: contain;
+    }
+    .skills .fade-up{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        align-items: center;
+        width: 100%;
+        height: 55vh;
+    }
+    .contact-me .container-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 5rem;
+        text-align: center;
+    }
+    .contact-me .container-contact .contact-email,
+    .contact-github,
+    .contact-linkedin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .contact-me .container-contact .contact-email a,
+    .contact-github a,
+    .contact-linkedin a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .contact-me .icon-tabler-mail,
+    .contact-me .icon-tabler-brand-linkedin,
+    .contact-me .icon-tabler-brand-github-filled{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+    }
+}
+
+@keyframes uptodown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes warnawarni{
+    0%{
+        color: red;
+    }
+    5%{
+        color: yellow;
+    }
+    10%{
+        color: greenyellow;
+    }
+    20%{
+        color: blue;
+    }
+    30%{
+        color: purple;
+    }
+    40%{
+        color: palegreen;
+    }
+    50%{
+        color: aqua;
+    }
+    60%{
+        color: brown;
+    }
+    70%{
+        color: tomato;
+    }
+    80%{
+        color: cadetblue;
+    }
+    90%{
+        color: darkgoldenrod;
+    }
+    100%{
+        color: deeppink;
+    }
+}
+
+@keyframes majumundur{
+    0%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
